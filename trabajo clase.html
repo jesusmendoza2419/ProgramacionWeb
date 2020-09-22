@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>   
+    <form action="formulario.html">
+        <h3>Texto</h3>
+        <label>Nombre</label>
+        <input id="nombre"name="name" type="text" placeholder="Ingrese su nombre" size="50" maxlength="5" >
+
+        <h3>Radio</h3>
+        <fieldset>
+            <legend>Seleciona Genero:</legend>
+            <input type="radio" name="genero" value="hombre" id="hombre" checked><label for="hombre"></label>Hombre
+            <input type="radio" name="genero" value="mujer">Mujer
+            <input type="radio" name="genero" value="otro">otro
+            
+        </fieldset>
+        
+        <h3>Select</h3>
+        <label>frutas:</label>
+        
+        <select name="frutas" id="frutas">
+            <optgroup label="FAVORITAS">
+                <option value="fresa">Fresa</option>
+            </optgroup>
+           
+        </select>
+
+
+        <h3>Textarea</h3>
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10">Holis</textarea>
+        <h3>Datalist</h3>
+        <label>Buscador:</label>
+        <input list="buscador">
+        <datalist id="buscador">
+            <option value="Internet Explorer"></option>
+            <option value="Chrome"></option>
+            <option value="Opera"></option>
+        </datalist>
+        <h3>CheckBox</h3>
+        <input type="checkbox" name="azul" value="azul">Azul
+        <input type="checkbox"name="verde" value="verde">Verde
+        <input type="submit" name="" id="">
+        <input type="image" src="">
+        
+        <h3>password</h3>
+        <label for="pass">Contraseña</label>
+        <input type="password" name="pass" id="pass" required>
+        
+        <h3>color</h3>
+        <input type="color">
+        <h3>fecha</h3>
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha" name="fecha" min="1999-08-22">
+
+        <h3>datetime</h3>
+        <input type="datetime-local">
+        <h3>time</h3>
+        <input type="time">
+
+        <h3>week</h3>
+        <input type="week">
+
+        <h3>correo</h3>
+        <input type="email" >
+        <h3>rango</h3>
+        <input type="range" min="0" max="50" step="10">
+        <h3>numero</h3>
+        <input type="number" >
+        <h3>search</h3>
+        <input type="search">
+        <h3>url</h3>
+        <input type="url">
+        <h3>archivos</h3>
+        <input type="file" multiple>
+        <h3>tel</h3>
+        <input type="tel" pattern="" maxlength="10">
+        
+
+        <br>
+        <br>
+        <br>
+        <button>ENVIAR</button>
+
+    </form>
+
+    
+</body>
+</html>
